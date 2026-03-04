@@ -1,0 +1,4 @@
+interface:
+  display_name: "Eval Tbench"
+  short_description: "Generate and submit SystemVerilog testbenches to EaaS evals."
+  default_prompt: "Use when running EaaS testbench evaluations given an eval set name."
