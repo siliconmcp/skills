@@ -24,10 +24,13 @@ Add the skill to your project or global configuration:
 
 ```bash
 # Project-level (recommended)
-claude skill add --file /path/to/skills/eval-sv-tbench/SKILL.md
+git clone git@github.com:siliconmcp/skills.git /tmp/siliconmcp-skills
 
-# Or add the GitHub source directly
-claude skill add --from "git@github.com:siliconmcp/skills.git" --subdirectory eval-sv-tbench
+# User level (global)
+cp -r /tmp/siliconmcp-skills/eval-sv-tbench ~/.claude/skills/
+
+# Project level
+cp -r /tmp/siliconmcp-skills/eval-sv-tbench  <project-dir>/.claude/skills/
 ```
 
 Alternatively, add it manually to your `.claude/settings.json`:
